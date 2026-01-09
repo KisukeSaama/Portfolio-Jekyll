@@ -26,9 +26,8 @@ twitter_username: sama_kisuke
 github_username: KisukeSaama
 
 # Build settings
-theme: minima
 plugins:
-    - jekyll-feed
+    - jekyll-postcss
 
 collections:
     projects:
