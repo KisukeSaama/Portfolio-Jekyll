@@ -1,5 +1,6 @@
 ---
-layout: project
-title: Projects
+layout: default
 permalink: /project/
 ---
+
+{% include card.html %}

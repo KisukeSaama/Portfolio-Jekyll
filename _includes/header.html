@@ -1,15 +1,33 @@
 {% include head.html %}
-<header class="flex items-center gap-6 max-w-dvw h-24">
-    <a href="/"
-        ><img src="/assets/images/logo.png" alt="Logo" class="h-24 w-24"
-    /></a>
+<header class="w-full h-24">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <a href="/"
+            ><img src="/assets/images/logo.png" alt="Logo" class="h-24 w-auto"
+        /></a>
 
-    <nav class="hidden md:block">
-        <ul class="rounded">
-            <a href="/">Accueil</a>
-            <a href="/about">À Propos</a>
-            <a href="/project">Projets</a>
-            <a href="/contact">Contact</a>
-        </ul>
-    </nav>
+        <nav class="hidden md:block">
+            <ul class="flex gap-2">
+                <a
+                    href="/"
+                    class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
+                    >Accueil</a
+                >
+                <a
+                    href="/about"
+                    class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/about/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
+                    >À Propos</a
+                >
+                <a
+                    href="/project"
+                    class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/project/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
+                    >Projets</a
+                >
+                <a
+                    href="/contact"
+                    class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/contact/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
+                    >Contact</a
+                >
+            </ul>
+        </nav>
+    </div>
 </header>

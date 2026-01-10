@@ -1,8 +1,12 @@
 <html>
-    <body class="text-white bg-[#0e0e0e]">
+    <body class="min-h-screen flex flex-col text-white bg-[#0e0e0e]">
         <header>{% include header.html %}</header>
-        <main>
-            <section>{{ content }}</section>
+        <main class="flex-1">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <article class="prose prose-invert max-w-none">
+                    {{ content }}
+                </article>
+            </div>
         </main>
         <footer>{% include footer.html %}</footer>
     </body>

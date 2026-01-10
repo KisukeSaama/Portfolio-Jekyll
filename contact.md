@@ -1,5 +1,6 @@
 ---
-layout: contact
-title: Contact
+layout: default
 permalink: /contact/
 ---
+
+{% include contact.html %}

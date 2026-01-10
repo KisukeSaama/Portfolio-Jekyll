@@ -2,11 +2,9 @@
 layout: default
 ---
 
-# Bienvenue sur mon portfolio
-
-Je m'appelle Jonathan Blanchard, j'ai 26 ans.
-
-Passionné des domaines tournant autour de l'informatique
-et des nouvelles technologies, j'enrichis mes
-connaissances autour de ces domaines pour mon futur
-professionnel.
+{% include hero.html
+  title="Bienvenue sur mon portfolio"
+  text1="Vous retrouverez ici mon travail ainsi que l'univers que je veux partager avec vous !"
+  text2="Je vous souhaite une excellente visite !"
+  img="/assets/images/profil.jpg"
+%}
