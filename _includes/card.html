@@ -17,13 +17,13 @@
                 <div class="mt-6 flex gap-4">
                     {% if project.github_url %}
                     <a
-                        href="{{ project.github_url }}"
+                        href="{{ project.github_url | relative_url }}"
                         target="_blank"
                         rel="noreferrer"
                         class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-black text-black transition-all duration-200 hover:bg-zinc-600 hover:text-white hover:shadow-lg"
                     >
                         <img
-                            src="/assets/icons/github.svg"
+                            src="{{ '/assets/icons/github.svg' | relative_url }}"
                             alt="GitHub"
                             class="h-5 w-5"
                         />

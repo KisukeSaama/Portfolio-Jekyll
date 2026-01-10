@@ -2,28 +2,31 @@
 <header class="w-full h-24">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="/"
-            ><img src="/assets/images/logo.png" alt="Logo" class="h-24 w-auto"
+            ><img
+                src="{{ '/assets/images/logo.png' | relative_url }}"
+                alt="Logo"
+                class="h-24 w-auto"
         /></a>
 
         <nav class="hidden md:block">
             <ul class="flex gap-2">
                 <a
-                    href="/"
+                    href="{{ site.baseurl }}/"
                     class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
                     >Accueil</a
                 >
                 <a
-                    href="/about"
+                    href="{{ site.baseurl }}/about"
                     class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/about/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
                     >À Propos</a
                 >
                 <a
-                    href="/project"
+                    href="{{ site.baseurl }}/project"
                     class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/project/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
                     >Projets</a
                 >
                 <a
-                    href="/contact"
+                    href="{{ site.baseurl }}/contact"
                     class="px-20 py-9 rounded-b-lg transition-colors {% if page.url == '/contact/' %} bg-[#ff7300] font-semibold {% else %} text-white hover:bg-[#94511b] {% endif %}"
                     >Contact</a
                 >

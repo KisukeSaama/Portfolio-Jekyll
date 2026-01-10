@@ -18,7 +18,7 @@
                     class="w-full h-[260px] sm:h-[320px] md:h-[420px] overflow-hidden rounded-xl"
                 >
                     <img
-                        src="{{ include.img }}"
+                        src="{{ include.img | relative_url }}"
                         alt="{{ include.title }}"
                         class="w-full h-full object-cover"
                     />

@@ -1,33 +1,36 @@
-<footer
-    class="relative w-full h-[180px] bg-[url(/assets/images/footer.svg)] bg-bottom bg-cover"
->
+<footer class="relative w-full h-[180px] overflow-hidden">
+    <img
+        src="{{ '/assets/images/footer.svg' | relative_url }}"
+        alt=""
+        class="absolute bottom-0 w-full h-auto"
+    />
+
     <div
         class="absolute bottom-6 left-6 right-6 flex items-center justify-between"
     >
         <p class="text-white text-sm font-semibold">Jonathan Blanchard</p>
 
-        <address class="flex gap-4">
+        <address class="flex gap-4 not-italic">
             <a
                 href="http://www.linkedin.com/in/jonathan-blanchard-82b249193/"
                 target="_blank"
                 rel="noreferrer"
             >
                 <img
-                    src="/assets/icons/linkedin.svg"
+                    src="{{ '/assets/icons/linkedin.svg' | relative_url }}"
                     class="h-10 w-10"
-                    alt="Linkedin Logo"
+                    alt="LinkedIn Logo"
                 />
             </a>
-
             <a
                 href="https://github.com/KisukeSaama"
                 target="_blank"
                 rel="noreferrer"
             >
                 <img
-                    src="/assets/icons/github.svg"
+                    src="{{ '/assets/icons/github.svg' | relative_url }}"
                     class="h-10 w-10"
-                    alt="Github Logo"
+                    alt="GitHub Logo"
                 />
             </a>
         </address>
